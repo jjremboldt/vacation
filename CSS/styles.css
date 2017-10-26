@@ -1,3 +1,7 @@
+#main-pic {
+  display: none;
+}
+
 #city {
   display: none;
 }
@@ -16,6 +20,7 @@
 
 .row-form {
   width: 50%;
+  margin: auto;
 }
 
 #main-pic {
@@ -23,7 +28,8 @@
 }
 
 .container-form {
-  padding-left: 300px;
+  display: none;
+  margin: auto;
 }
 
 .results-pics {

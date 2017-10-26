@@ -1,3 +1,12 @@
+$(document).ready(function(){
+      $("#main-pic").show(1000);
+      $("#container-form").show(1000);
+  });
+
+$(document).ready(function(){
+    $(".container-form").show(1000);
+  });
+
 var beach = 0;
 var city = 0;
 var mountains = 0;
@@ -10,7 +19,7 @@ $(document).ready(function(){
     var sights = $("#sights").val();
     var transportation = $("#transportation").val();
     var food = $("#food").val();
-    
+
     //locale
       if(locale === "1") {
         beach +=1;
@@ -66,18 +75,20 @@ $(document).ready(function(){
         mountains +=1;
       }
 
-
+    //calculate results-pics
       if (city >= mountains && country > beach) {
         $("#city").show();
-      } else if (mountains > beach) {
+      } else if (mountains > beach && country) {
       $("#mountains").show();
       } else {
         $("#beach").show();
       }
-  $(document).ready(function(){
-      $("#city").show(1000);
-    });
+
     event.preventDefault();
+
+    function myFunction() {
+    document.getElementById("make-selections").reset();
+}
 
   });
 });
