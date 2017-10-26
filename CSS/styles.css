@@ -13,3 +13,19 @@
 #country {
   display: none;
 }
+
+.row-form {
+  width: 50%;
+}
+
+#main-pic {
+  width: 100%;
+}
+
+.container-form {
+  padding-left: 300px;
+}
+
+.results-pics {
+  margin: auto;
+}

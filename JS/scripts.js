@@ -10,7 +10,7 @@ $(document).ready(function(){
     var sights = $("#sights").val();
     var transportation = $("#transportation").val();
     var food = $("#food").val();
-
+    
     //locale
       if(locale === "1") {
         beach +=1;
