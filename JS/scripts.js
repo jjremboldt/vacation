@@ -79,16 +79,15 @@ $(document).ready(function(){
       if (city >= mountains && country > beach) {
         $("#city").show();
       } else if (mountains > beach && country) {
-      $("#mountains").show();
-      } else {
+        $("#mountains").show();
+      } else if (beach > country) {
         $("#beach").show();
+      } else {
+        $("#country").show();
       }
 
-    event.preventDefault();
+      event.preventDefault();
 
-    function myFunction() {
-    document.getElementById("make-selections").reset();
-}
 
   });
 });

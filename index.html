@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <link href="css/styles.css" rel="stylesheet" type="text/css"
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/vacay-icon.png">
+    <title>Vacation Choser</title>
   </head>
   <body>
     <div class="container">
@@ -24,10 +26,10 @@
       <div class="row-form">
       <form id="make-selections">
         <div class="form-group">
-          <h4>Where do you want to go?</h4>
+          <h4>What is on your mind?</h4>
         <select class="form-control" id="locale">
-          <option value="1">Beach</option>
-          <option value="2">City</option>
+          <option value="1">Sun</option>
+          <option value="2">Urban</option>
           <option value="3">Mountains</option>
           <option value="4">Country</option>
         </select>
@@ -64,7 +66,7 @@
           <option value="4">BBQ</option>
         </select>
         <br>
-        <button type="submit" class="btn btn-info">Submit</button>
+        <button type="submit" class="btn btn-info">Let's Go!</button>
       </div>
     </div>
   </div>
@@ -78,16 +80,20 @@
             <div class="col-md-8">
               <div>
               <div id="city" class="pics">
-                <img src="img/gif/country.gif" alt="">
+                <p><center><strong>You belong in the city!</P>
+                  <img src="img/nyc.jpg" alt="">
               </div>
               <div id="mountains" class="pics">
-                <img src="img/colorado.jpg" alt="">
+                <p><center><strong>You belong in the mountains!</P>
+                  <img src="img/colorado.jpg" alt="">
               </div>
               <div id="beach" class="pics">
-                <img src="img/florida.jpg" alt="">
+                <p><center><strong>You belong at the beach!</P>
+                  <img src="img/texas.jpg" alt="">
               </div>
               <div id="country" class="pics">
-                <img src="img/rural.jpg" alt="">
+                <p><center><strong>You belong in the country!</P>
+                  <img src="img/rural.jpg" alt="">
               </div>
               </div>
             </div>
@@ -100,6 +106,6 @@
   </body>
     </div>
       <div class="footer_bottom fourth-bg">
-        <p><center> 2017 &copy; Copyright John Remboldt. All rights Reserved. </p>
+        <p><center> 2017 &copy; Copyright John Remboldt. All Rights Reserved. </p>
       </div>
 </html>

@@ -2,20 +2,10 @@
   display: none;
 }
 
-#city {
-  display: none;
-}
-
-#mountains {
-  display: none;
-}
-
-#beach {
-  display: none;
-}
-
-#country {
-  display: none;
+.container-card {
+  margin: auto;
+  padding: 25px 25px 25px 25px;
+  width: 50%;
 }
 
 .row-form {
@@ -34,4 +24,20 @@
 
 .results-pics {
   margin: auto;
+}
+
+#city {
+  display: none;
+}
+
+#mountains {
+  display: none;
+}
+
+#beach {
+  display: none;
+}
+
+#country {
+  display: none;
 }
