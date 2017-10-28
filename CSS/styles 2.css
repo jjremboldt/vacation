@@ -1,0 +1,47 @@
+#main-pic {
+  display: none;
+}
+
+#welcome-msg-1, #welcome-msg-2 {
+  display: none;
+}
+
+.container-card {
+  margin: auto;
+  padding: 25px 25px 25px 25px;
+  width: 50%;
+}
+
+.row-form {
+  width: 50%;
+  margin: auto;
+}
+
+#main-pic {
+  width: 100%;
+}
+
+.container-form {
+  display: none;
+  margin: auto;
+}
+
+.results-pics {
+  margin: auto;
+}
+
+#city {
+  display: none;
+}
+
+#mountains {
+  display: none;
+}
+
+#beach {
+  display: none;
+}
+
+#country {
+  display: none;
+}

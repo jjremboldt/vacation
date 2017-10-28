@@ -14,7 +14,7 @@ var country = 0;
 
 $(document).ready(function(){
   $("#make-selections").submit(function(event){
-    var locales = $("#locale").val();
+    var locale = $("#locale").val();
     var activity = $("#activity").val();
     var sights = $("#sights").val();
     var transportation = $("#transportation").val();
@@ -33,18 +33,18 @@ $(document).ready(function(){
 
     //activity
       if(activity === "1") {
-        mountains +=1;
-      } else if(activity === "2") {
         beach +=1;
+      } else if(activity === "2") {
+        mountains +=1;
       } else if(activity === "3") {
-        city +=1;
+        country +=1;
       } else if(activity === "4") {
         city +=1;
       }
 
     //sights
       if(sights === "1") {
-        city +=1;
+        beach +=1;
       } else if(sights === "2") {
         mountains+=1;
       } else if(sights === "3") {
@@ -66,19 +66,19 @@ $(document).ready(function(){
 
     //food
       if(food === "1") {
-        city +=1;
-      } else if(food === "2") {
-        country+=1;
-      } else if(food === "3") {
         beach +=1;
+      } else if(food === "2") {
+        mountains+=1;
+      } else if(food === "3") {
+        city +=1;
       } else if(food === "4") {
-        mountains +=1;
+        country +=1;
       }
 
     //calculate results-pics
-      if (city >= mountains && country > beach) {
+      if (city > mountains > country > beach) {
         $("#city").show();
-      } else if (mountains > beach && country) {
+      } else if (mountains > beach > country) {
         $("#mountains").show();
       } else if (beach > country) {
         $("#beach").show();
@@ -88,6 +88,9 @@ $(document).ready(function(){
 
       event.preventDefault();
 
-
+      $('#again').on('click', function(e){
+        e.preventDefault();
+        $("#make-selections").reset();
+      });
   });
 });
