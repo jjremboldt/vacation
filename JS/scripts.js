@@ -22,9 +22,9 @@ $(document).ready(function(){
 
     //locale
       if(locale === "1") {
-        beach +=1;
-      } else if(locale === "2") {
         city +=1;
+      } else if(locale === "2") {
+        country +=1;
       } else if(locale === "3") {
         mountains +=1;
       } else if(locale === "4") {
@@ -33,7 +33,7 @@ $(document).ready(function(){
 
     //activity
       if(activity === "1") {
-        beach +=1;
+        city +=1;
       } else if(activity === "2") {
         mountains +=1;
       } else if(activity === "3") {
@@ -44,11 +44,11 @@ $(document).ready(function(){
 
     //sights
       if(sights === "1") {
-        beach +=1;
+        city +=1;
       } else if(sights === "2") {
         mountains+=1;
       } else if(sights === "3") {
-        city +=1;
+        beach +=1;
       } else if(sights === "4") {
         country +=1;
       }
@@ -66,17 +66,17 @@ $(document).ready(function(){
 
     //food
       if(food === "1") {
-        beach +=1;
+        city +=1;
       } else if(food === "2") {
         mountains+=1;
       } else if(food === "3") {
-        city +=1;
+        beach +=1;
       } else if(food === "4") {
         country +=1;
       }
 
     //calculate results-pics
-      if (city > mountains > country > beach) {
+      if (city >= mountains > country > beach) {
         $("#city").show();
       } else if (mountains > beach > country) {
         $("#mountains").show();
@@ -88,9 +88,9 @@ $(document).ready(function(){
 
       event.preventDefault();
 
-      $('#again').on('click', function(e){
-        e.preventDefault();
-        $("#make-selections").reset();
+      $("#again").click(function() {
+        location.reload();
       });
+
   });
 });
