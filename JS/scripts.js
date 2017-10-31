@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/* $(document).ready(function(){
       $("#main-pic").show(1000);
       $("#container-form").show(1000);
   });
@@ -10,10 +10,11 @@ $(document).ready(function(){
 var beach = 0;
 var city = 0;
 var mountains = 0;
-var country = 0;
+var country = 0; */
 
 $(document).ready(function(){
-  $("#make-selections").submit(function(event){
+
+    $("#make-selections").submit(function(event){
     var locale = $("#locale").val();
     var activity = $("#activity").val();
     var sights = $("#sights").val();
