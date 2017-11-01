@@ -5,12 +5,12 @@
 
 $(document).ready(function(){
     $(".container-form").show(1000);
-  });
+  }); */
 
 var beach = 0;
 var city = 0;
 var mountains = 0;
-var country = 0; */
+var country = 0;
 
 $(document).ready(function(){
 
